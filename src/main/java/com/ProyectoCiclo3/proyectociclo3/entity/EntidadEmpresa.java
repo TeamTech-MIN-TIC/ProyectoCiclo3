@@ -49,4 +49,14 @@ public class EntidadEmpresa {
     public void setNitempresa(String nitemprresa) {
         this.nitempresa = nitemprresa;
     }
+
+    @Override
+    public String toString() {
+        return "EntidadEmpresa{" +
+                "nomempresa='" + nomempresa + '\'' +
+                ", dirempresa='" + dirempresa + '\'' +
+                ", telempresa='" + telempresa + '\'' +
+                ", nitempresa='" + nitempresa + '\'' +
+                '}';
+    }
 }
