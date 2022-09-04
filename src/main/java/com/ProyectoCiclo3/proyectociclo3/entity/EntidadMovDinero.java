@@ -39,4 +39,13 @@ public class EntidadMovDinero {
     public void setUsuario(String usuario) {
         this.usuario = usuario;
     }
+
+    @Override
+    public String toString() {
+        return "EntidadMovDinero{" +
+                "monto='" + monto + '\'' +
+                ", concepto='" + concepto + '\'' +
+                ", usuario='" + usuario + '\'' +
+                '}';
+    }
 }
