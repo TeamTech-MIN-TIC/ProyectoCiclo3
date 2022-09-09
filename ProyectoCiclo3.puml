@@ -1,0 +1,59 @@
+@startuml
+class com.ProyectoCiclo3.proyectociclo3.entity.EntidadEmpleado {
+- String nombre
+- String correo
+- String empresa
+- String rol
++ <<Create>> EntidadEmpleado(String,String,String,String)
++ <<Create>> EntidadEmpleado()
++ String getNombre()
++ void setNombre(String)
++ String getCorreo()
++ void setCorreo(String)
++ String getEmpresa()
++ void setEmpresa(String)
++ String getRol()
++ void setRol(String)
++ String toString()
+}
+class com.ProyectoCiclo3.proyectociclo3.Proyectociclo3ApplicationTests {
+~ void contextLoads()
+}
+class com.ProyectoCiclo3.proyectociclo3.entity.EntidadEmpresa {
+- String nomempresa
+- String dirempresa
+- String telempresa
+- String nitempresa
++ <<Create>> EntidadEmpresa(String,String,String,String)
++ <<Create>> EntidadEmpresa()
++ String getNomempresa()
++ void setNomempresa(String)
++ String getDirempresa(String)
++ void setDiremprresa(String)
++ String getTelempresa()
++ void setTelempresa(String)
++ String getNitempresa()
++ void setNitempresa(String)
++ String toString()
+}
+class com.ProyectoCiclo3.proyectociclo3.controller.ControladorGeneral {
++ String saludo()
+}
+class com.ProyectoCiclo3.proyectociclo3.Proyectociclo3Application {
++ {static} void main(String[])
+}
+class com.ProyectoCiclo3.proyectociclo3.entity.EntidadMovDinero {
+- String monto
+- String concepto
+- String usuario
++ <<Create>> EntidadMovDinero(String,String,String)
++ <<Create>> EntidadMovDinero()
++ String getMonto()
++ void setMonto(String)
++ String getConcepto()
++ void setConcepto(String)
++ String getUsuario()
++ void setUsuario(String)
++ String toString()
+}
+@enduml
